@@ -24,7 +24,4 @@ test:
   database: rivas_test
 
 production:
-  <<: *default
-  database: rivas_production
-  username: rivas
-  password: <%= ENV['RIVAS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
